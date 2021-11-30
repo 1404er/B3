@@ -7,7 +7,7 @@ Best-Buy-Bot. Written in Python
 
 ## About
 B3 is a bot thats a newer and updated version of a now deprecated bot called BBB. It's now improved to be faster, more accurate, and easier to use then before. 
-B3 automatically purchase an item from BestBuy when it's available using the given link. Right now it's just a desktop app but expanding it to more practical
+B3 automatically purchases an item from BestBuy when it's available using the given link. Right now it's just a desktop app but expanding it to more practical
 use cases (e.g. running in "the cloud") may exist in future versions.
 
 
@@ -101,13 +101,22 @@ __If you already have python installed, skip this step.__
 # Modules used
 
 ### Internal:
+
 Datetime
+
 os
+
 shutil
+
 time
 
+
 ### Third-Party:
+
 Selenium
+
 Pyinstaller (unused as of now)
+
 Pywin32 (unused as of now)
+
 winshell (unused as of now)
