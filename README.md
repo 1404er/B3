@@ -86,7 +86,7 @@ __If you already have python installed, skip this step.__
 #### 5.2 extract it.
 #### 5.3 In the extracted folder, run setup.py
 #### 5.4 Press Ctrl + V to paste the directory copied earlier.
-#### 5.5 When asked for a drive letter use a A:\ format A being your hard drive.
+#### 5.5 When asked for a drive letter use an A:\ format, A being your hard drive.
 #### If you are unsure what this means, type C:\
 #### 5.6 Follow the rest of the prompts.
 #### 5.7 After the inital setup, a check will run. read carefully and start the check.
