@@ -86,17 +86,14 @@ __If you already have python installed, skip this step.__
 #### 5.2 extract it.
 #### 5.3 In the extracted folder, run setup.py
 #### 5.4 Press Ctrl + V to paste the directory copied earlier.
-#### 5.5 When asked for a drive letter use an A:\ format, A being your hard drive.
-#### If you are unsure what this means, type C:\
-#### 5.6 Follow the rest of the prompts.
-#### 5.7 After the inital setup, a check will run. read carefully and start the check.
-#### 5.8 During the check you might see a prompt asking for email and or phone confirmation. B3 cannot do this itself yet. You must click and allow the sign in.
-#### 5.9 When the verification check is done, open File Explorer
-#### 5.10 Go to the root of the drive you installed B3 on.
-#### 5.11 Go to the b3 folder.
-#### 5.12 Right click "b3.py" and choose Send to -> Desktop (create shortcut)
-#### 5.13 Double click the shortcut and enter in the item & login info when prompted.
-#### 5.14 Let it run until your item is bought!
+#### 5.5 Follow the rest of the prompts.
+#### 5.6 After the inital setup, go to C:\b3 in File Explorer. run verify.py by double clicking. read carefully and start the check.
+#### 5.7 During the check you might see a prompt asking for email and or phone confirmation. B3 cannot do this itself yet. You must click and allow the sign in.
+#### 5.8 When the verification check is done, Close the window.
+#### 5.9 Go to the C:\b3 folder again.
+#### 5.10 Right click "b3.py" and choose Send to -> Desktop (create shortcut)
+#### 5.11 Double click the shortcut and enter in the item & login info when prompted.
+#### 5.12 Let it run until your item is bought!
 
 # Modules used
 
@@ -107,6 +104,8 @@ Datetime
 os
 
 shutil
+
+sys
 
 time
 
