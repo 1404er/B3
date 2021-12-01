@@ -82,7 +82,7 @@ __If you already have python installed, skip this step.__
 
 ### Step 5: Running B3
 #### Now that everything is configured, It's time to actually install B3.
-#### 5.1 Go to the 4th link. At the newest release, scroll down to files and download b3win.zip
+#### 5.1 Go to the 4th link. At the newest release, scroll down to files and download b3v0.2win.zip
 #### 5.2 extract it.
 #### 5.3 In the extracted folder, run setup.py
 #### 5.4 Press Ctrl + V to paste the directory copied earlier.
