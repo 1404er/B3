@@ -29,6 +29,8 @@ else:
 
 email = input("BestBuy Account Email: ")
 password = input("BestBuy Account Password: ")
+
+print("\nThis is required by BestBuy to use the default payment.")
 cvv = input("BestBuy Default Payment Method CVV/CVC: ")
 
 # Deprecated func
@@ -77,7 +79,7 @@ with webdriver.Chrome() as driver:
             signInBtn = driver.find_element(By.XPATH, "//*[text()='Sign In']")
             signInBtn.click()
 
-            enterCVV = WebDriverWait(driver, 1000).until(
+            enterCVV = WebDriverWait(driver, 600).until(
                 presence_of_element_located((By.ID, "cvv"))
             )
 
@@ -93,4 +95,4 @@ with webdriver.Chrome() as driver:
     sleep(60)
     driver.quit()
     time = datetime.now().strftime("%m/%d/%Y %H:%M:%S")
-    print("Finished " + time)
+    input("Finished " + time)
