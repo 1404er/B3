@@ -1,19 +1,19 @@
 import os
 import shutil
 
-print("B3 Installer\nV0.1")
+print("\nB3 Installer\nV0.2")
 print("\nIf you are stuck, view README.md file\n")
 cdd = input("Chromedriver Directory: ")
 cdd.lower()
-print(r"Driveletter for install location")
-driveletter = input(r"( Default: C:\ ): ")
-installlocation = driveletter + r"b3\chromedriver.exe"
+#print(r"Driveletter for install location")
+#driveletter = input(r"( Default: C:\ ): ")
+installlocation = r"C:\b3\chromedriver.exe"
 if "chromedriver.exe" in cdd:
     pass
 else:
     cdd = cdd + r"\chromedriver.exe"
 
-mkdir = driveletter + "b3"
+mkdir = r"C:\b3"
 mkdirico = mkdir + r"\ico"
 try:
     os.mkdir(mkdir)
@@ -29,22 +29,25 @@ try:
     shutil.move(cdd, installlocation)
 except OSError as e:
     print('Error trying to move chromedriver.exe. Setup will now cancel')
-    print(e)
-    pass
+    raise
 
 cwd = os.getcwd()
-shutil.move(cwd + r"\source\main.py", driveletter + r"b3\main.py")
-shutil.move(cwd + r"\source\verify.py", driveletter + r"b3\verify.py")
-shutil.move(cwd + r"\source\b3.py", driveletter + r"b3\b3.py")
-shutil.move(cwd + r"\source\ico\pyinstallerdefault.ico", driveletter + r"b3\ico\pyinstallerdefault.ico")
+shutil.move(cwd + r"\b3\main.py", r"C:\b3\main.py")
+shutil.move(cwd + r"\b3\verify.py", r"C:\b3\verify.py")
+shutil.move(cwd + r"\b3\b3.py", r"C:\b3\b3.py")
+shutil.move(cwd + r"\b3\ico\pyinstallerdefault.ico", r"C:\b3\ico\pyinstallerdefault.ico")
 
-input("Required modules will now be installed. Press enter to continue.")
+input("\nRequired modules will now be installed. Press enter to continue.")
+
 os.system("pip install winshell")
 os.system("pip install pywin32")
 os.system("pip install selenium")
 os.system("pip install pyinstaller")
 
 os.system("cls")
+
+# Exe temporarily not available due to windows defender thinking it's a trojan.
+# Will try to find fix for this
 
 #shortcut = input("\nAn exe will now be created.\nWould you like to make a shortcut? [Y/n]")
 #shortcut = shortcut.lower()
@@ -83,9 +86,13 @@ os.system("cls")
 #else:
 #    pass
 #
-print("A test will now run.\nIF PROMPTED, ENTER BESTBUY CONFIRMATION EMAIL/TEXT")
-input("Press Enter to continue")
-verify = driveletter + r"b3\verify.py"
-b3dir = driveletter + r"b3"
-os.system("cd " + b3dir)
-os.system("verify.py")
+
+print('You must now verify that the install went correct.')
+print(r"To do this, go to C:\b3\verify.py and double click to run it.")
+print("IF PROMPTED, ENTER BESTBUY CONFIRMATION EMAIL/TEXT")
+input("Press Enter to close")
+
+#verify = r"C:\b3\verify.py"
+#b3dir = r"C:\b3"
+#os.system("cd " + b3dir)
+#os.system("verify.py")
