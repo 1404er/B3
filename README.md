@@ -3,7 +3,7 @@ Best-Buy-Bot. Written in Python
 
 **NOTICE:**
 
-**Don't be a disgrace to society. Don't use this for any mass buying/reselling purposes.**
+**Don't use this for any scalping/reselling purposes.**
 
 ## About
 B3 is a bot thats a newer and updated version of a now deprecated bot called BBB. It's now improved to be faster, more accurate, and easier to use then before. 
