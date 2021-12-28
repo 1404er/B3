@@ -38,7 +38,7 @@ cvv = input("BestBuy Default Payment Method CVV/CVC: ")
 bought = False
 
 with webdriver.Chrome() as driver:
-    driver.get("https://www.bestbuy.com/site/nintendo-eshop-5-gift-card-digital/5900136.p?skuId=5900136")
+    driver.get(link)
     while not bought:
         try:
             addToCartBtn = driver.find_element(By.CLASS_NAME, "c-button-disabled")
