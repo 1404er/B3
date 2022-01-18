@@ -4,6 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.expected_conditions import presence_of_element_located
+from webdriver_manager.chrome import ChromeDriverManager
 
 print("This will start a verification test to check B3 is functioning properly.")
 print("This is required before running B3.")
@@ -17,7 +18,9 @@ link = "https://www.bestbuy.com/site/free-youtube-premium-for-3-months-new-subsc
 email = input("BestBuy Account Email: ")
 password = input("BestBuy Account Password: ")
 
-with webdriver.Chrome() as driver:
+bought = False
+
+with webdriver.Chrome(ChromeDriverManager().install(), service_log_path="NUL") as driver:
     driver.get(link)
     while not bought:
         try:
@@ -55,12 +58,11 @@ with webdriver.Chrome() as driver:
             signInBtn = driver.find_element(By.XPATH, "//*[text()='Sign In']")
             signInBtn.click()
 
-            enterCVV = WebDriverWait(driver, 1000).until(
-                presence_of_element_located((By.ID, "cvv"))
+            placeOrderBtn = WebDriverWait(driver, 1000).until(
+                presence_of_element_located((By.CLASS_NAME, "btn-lg.btn-block.btn-primary.button__fast-track"))
             )
 
-            enterCVV.send_keys(000)
-            sleep(0.5)
-            confirmBuy = driver.find_element(By.CLASS_NAME, "btn-lg.btn-block.btn-primary.button__fast-track")
-            print("Test complete. You may now close.")
+            driver.close()
+
             bought = True
+            input("Test complete. You may now close. ")

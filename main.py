@@ -4,25 +4,24 @@ from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-# Unused for now
-# from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.expected_conditions import presence_of_element_located
+from webdriver_manager.chrome import ChromeDriverManager
 
 link = input("BestBuy Item Link: ")
 link = link.lower()
 
-linkwwwcheck = link[0:4]
-if linkwwwcheck == "www.":
+link_www_check = link[0:4]
+if link_www_check == "www.":
     pass
 else:
-    linkwwwcheck = link[0:12]
-    if linkwwwcheck == "https://www.":
+    link_www_check = link[0:12]
+    if link_www_check == "https://www.":
         pass
     else:
         link = "www." + link
 
-linkhttpscheck = link[0:8]
-if linkhttpscheck == "https://":
+link_https_check = link[0:8]
+if link_https_check == "https://":
     pass
 else:
     link = "https://" + link
@@ -33,11 +32,9 @@ password = input("BestBuy Account Password: ")
 print("\nThis is required by BestBuy to use the default payment.")
 cvv = input("BestBuy Default Payment Method CVV/CVC: ")
 
-# Deprecated func
-# browser = webdriver.Chrome("C:/Webdriver/chromedriver/chromedriver.exe")
 bought = False
 
-with webdriver.Chrome() as driver:
+with webdriver.Chrome(ChromeDriverManager().install(), service_log_path="NUL") as driver:
     driver.get(link)
     while not bought:
         try:
@@ -66,7 +63,7 @@ with webdriver.Chrome() as driver:
                 presence_of_element_located((By.XPATH, "//*[text()='Checkout']"))
             )
             toBuyScreen.click()
-# EXECUTE ORDER 66
+
             enterEmail = WebDriverWait(driver, 10).until(
                 presence_of_element_located((By.ID, "fld-e"))
             )
