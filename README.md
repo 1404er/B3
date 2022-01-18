@@ -38,10 +38,15 @@ __If you already have python installed, skip this step.__
 
 #### 1.1. Go to the 1st link and click the download button shown below:
 ![Screenshot 2021-11-30 094425](https://user-images.githubusercontent.com/69096657/144100197-6a2118eb-14dd-441f-8dae-6bc0a4d30ea9.png)
+<sub><sup>My microsoft paint circle lol</sup></sub>
+
 #### 1.2. Open the installer.
 ![unknown](https://user-images.githubusercontent.com/69096657/144100640-49284c03-c5a3-40ff-bb8e-fb68b0d3225e.png)
+
+<sub><sup>I'm good at making circles</sup></sub>
 #### Select the Add Python 3.10 to PATH option. Note: this may require administrator privileges.
 #### Select Install Now.
+
 #### 1.3. When the install is finished, Select disable path length limit if prompted.
 ![unknown2](https://user-images.githubusercontent.com/69096657/144101345-6d57414a-089b-4351-a3ba-22aa7d2c27eb.png)
 #### Restart your pc and go to the next step.
