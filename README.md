@@ -25,7 +25,7 @@ Install guide
 
 ### Links you'll need:
 #### [Python 3](https://www.python.org/downloads/)
-__Keep this page. Don't download anything from it just yet.__
+You'll need Python 3.10 or later.
 #### [Google Chrome](https://www.google.com/chrome/)
 As of now, only Google Chrome is supported.
 #### [B3](https://github.com/Dogey11/B3/releases/latest)
