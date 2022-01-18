@@ -7,14 +7,13 @@ Best-Buy-Bot. Written in Python
 
 ## About
 B3 is a bot thats a newer and updated version of a now deprecated bot called BBB. It's now improved to be faster, more accurate, and easier to use then before. 
-B3 automatically purchases an item from BestBuy when it's available using the given link. Right now it's just a desktop app but expanding it to more practical
-use cases (e.g. running in "the cloud") may exist in future versions.
+B3 automatically purchases an item from BestBuy when it's available using the given link.
 
 
 ## Supported Operating Systems
 ### Windows - Supported
 ### Mac OS - Not Supported
-### Linux - Not Supported (Future Support Planned)
+### Linux - Not Supported
 Although Mac OS and Linux aren't supported (Yet) __they still might work but are untested at the moment.__ Til then, Feel free to download and try to run it or even
 tweak the source code if you want to try and port it.
 
@@ -23,7 +22,7 @@ tweak the source code if you want to try and port it.
 Install guide
 
 ### Links you'll need:
-#### [Python](https://www.python.org/downloads/)
+#### [Python 3](https://www.python.org/downloads/)
 __Keep this page. Don't download anything from it just yet.__
 #### [Google Chrome](https://www.google.com/chrome/)
 As of now, only Google Chrome is supported.
@@ -113,9 +112,3 @@ time
 ### Third-Party:
 
 Selenium
-
-Pyinstaller (unused as of now)
-
-Pywin32 (unused as of now)
-
-winshell (unused as of now)
