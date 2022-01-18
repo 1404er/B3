@@ -1,4 +1,7 @@
-# B3
+# This is legacy documentation for versions 0.3 and under. See latest README [here.](https://github.com/Dogey11/B3/blob/main/README.md)
+
+
+## B3
 Best-Buy-Bot. Written in Python
 
 **NOTICE:**
@@ -28,8 +31,8 @@ __Keep this page. Don't download anything from it just yet.__
 As of now, only Google Chrome is supported.
 #### [ChromeDriver](https://chromedriver.chromium.org/downloads)
 __Keep this page. Don't download anything from it just yet.__
-#### [B3](https://github.com/Dogey11/B3/releases)
-The latest release of B3.
+#### [B3](https://github.com/Dogey11/B3/releases/tag/v0.3)
+B3.
 
 ### Installation Guide:
 
