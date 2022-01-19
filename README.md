@@ -11,6 +11,7 @@ Best-Buy-Bot. Written in Python
 B3 is a bot thats a newer and updated version of a now deprecated bot called "BBB". It's now improved to be faster, more accurate, and easier to use then before. 
 B3 automatically purchases an item from BestBuy when it's available using the given link.
 
+<sub><sup>Real original name right?</sup></sub>
 
 ## Currently Supported Operating Systems
 ### Windows - Supported
@@ -20,7 +21,7 @@ Although Mac OS and Linux aren't supported (Yet) __they still might work but are
 tweak the source code if you want to try and port it.
 
 
-# Install
+## Install
 Install guide
 
 ### Links you'll need:
@@ -51,12 +52,16 @@ __If you already have python installed, skip this step.__
 ![unknown2](https://user-images.githubusercontent.com/69096657/144101345-6d57414a-089b-4351-a3ba-22aa7d2c27eb.png)
 #### Restart your pc and go to the next step.
 
+
+
 ### Step 2: Create and Configure A BestBuy Account
 ### These are the most crucial steps and if not done right, B3 won't be able to complete the purchase.
 #### 2.1 Create A BestBuy account if you don't have one. If you do, make a new one for the bot or use your own.
 #### 2.2 Make sure the address you want the product to be shipped to is the ONLY address saved to your BestBuy account.
 #### 2.3 Make sure only the payment method you plan to use is saved.
 #### 2.4 Make sure 2FA (Two factor authentication) is DISABLED on your account.
+
+
 
 ### Step 3: Running B3
 #### Now that everything is configured, It's time to actually install B3.
@@ -73,9 +78,11 @@ __If you already have python installed, skip this step.__
 #### 3.11 Double click the shortcut and enter in the item & login info when prompted.
 #### 3.12 Let it run until your item is bought!
 
-# Modules used
 
-### Internal:
+
+## Modules used
+
+#### Internal:
 
 Datetime
 
@@ -88,8 +95,13 @@ sys
 time
 
 
-### Third-Party:
+#### Third-Party:
 
 [Selenium](https://pypi.org/project/selenium/)
 
 [webdriver-manager](https://pypi.org/project/webdriver-manager/)
+
+## Installing from source
+``` 
+git clone https://github.com/Dogey11/B3
+```
