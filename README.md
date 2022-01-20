@@ -68,14 +68,14 @@ __If you already have python installed, skip this step.__
 #### 3.1 Go to the 4th link. At the newest release, scroll down to files and download the zip file.
 #### 3.2 extract it.
 #### 3.3 In the extracted folder, run setup.py
-#### 3.5 Follow the prompts.
-#### 3.6 After the inital setup, go to C:\b3 in File Explorer. run verify.py by double clicking or running from cmd. read carefully and start the check.
-#### 3.7 During the check you might see a prompt from BestBuy asking for email and or phone confirmation. B3 cannot do this itself yet. You must click and allow the sign in.
-#### 3.8 When the verification check is done, Close the window.
-#### 3.9 Go to the C:\b3 folder again.
-#### 3.10 (Optional) Right click "b3.py" and choose Send to -> Desktop (create shortcut)
-#### 3.11 Double click the shortcut or .py file and enter in the item & login info when prompted.
-#### 3.12 Let it run until your item is bought!
+#### 3.4 Follow the prompts.
+#### 3.5 After the inital setup, go to C:\b3 in File Explorer. run verify.py by double clicking or running from cmd. read carefully and start the check.
+#### 3.6 During the check you might see a prompt from BestBuy asking for email and or phone confirmation. B3 cannot do this itself yet. You must click and allow the sign in.
+#### 3.7 When the verification check is done, Close the window.
+#### 3.8 Go to the C:\b3 folder again.
+#### 3.9 (Optional) Right click "b3.py" and choose Send to -> Desktop (create shortcut)
+#### 3.10 Double click the shortcut or .py file and enter in the item & login info when prompted.
+#### 3.11 Let it run until your item is bought!
 
 
 
