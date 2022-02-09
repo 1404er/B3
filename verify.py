@@ -1,3 +1,4 @@
+import os
 import selenium.common.exceptions as ec
 from time import sleep
 from selenium import webdriver
@@ -65,4 +66,7 @@ with webdriver.Chrome(ChromeDriverManager().install(), service_log_path="NUL") a
             driver.close()
 
             bought = True
-            input("Test complete. You may now close. ")
+            os.system("cls")
+            print("Test complete. You may now close.")
+            print("\nIt is recommended to remove the free item from your\ncart before continuing.\n")
+            input("Press Enter to close.")

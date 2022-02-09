@@ -2,23 +2,24 @@ import os
 from os.path import exists
 import shutil
 
-print("\nB3 Installer\nV0.5")
+print("\nB3 Installer\nV0.6")
 print("\nIf you are stuck, view README.md file\n")
 
 # GitHub Copilot is a great thing
 
 input("\nRequired modules will now be installed. Press enter to continue. ")
 os.system("pip install -r Required")
+os.system("cls")
 
-if exists("C:/Program Files/Google/Chrome/Application/chrome.exe"):
-    pass
-elif exists("C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"):
+dir1 = "C:/Program Files/Google/Chrome/Application/chrome.exe"
+dir2 = "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"
+
+if exists(dir1 or dir2):
     pass
 else:
-    print("\nGoogle Chrome was not found. Please make sure it's installed before continuing\n")
+    print("\nGoogle Chrome was not found automatically. Please make sure it's installed before continuing\n")
     input("Press enter to continue. ")
 
-os.system("cls")
 print("\nChromedriver will now be installed.")
 input("Press Enter to continue. ")
 
@@ -30,14 +31,8 @@ driver.close()
 try:
     os.mkdir("C:/B3")
 except FileExistsError:
-    pass
-
-mkdirico = "C:/B3/ico"
-
-try:
-    os.mkdir(mkdirico)
-except FileExistsError:
-    pass
+    shutil.rmtree("C:/B3")
+    os.mkdir("C:/B3")
 
 cwd = os.getcwd()
 shutil.move(cwd + r"/main.py", r"C:/b3/main.py")
