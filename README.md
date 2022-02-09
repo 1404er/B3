@@ -17,8 +17,6 @@ B3 automatically purchases an item from BestBuy when it's available using the gi
 ### Windows - Supported
 ### Mac OS - Not Supported
 ### Linux - Not Supported
-Although Mac OS and Linux aren't supported (Yet) __they still might work but are untested at the moment.__ Til then, Feel free to download and try to run it or even
-tweak the source code if you want to try and port it.
 
 
 ## Install
