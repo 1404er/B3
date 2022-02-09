@@ -5,7 +5,7 @@ Best-Buy-Bot. Written in Python
 
 **Don't use this for any scalping/reselling purposes.**
 
-**This is documentation for versions 0.4 and up. If you need documentation for an older version you can find it [here.](https://github.com/Dogey11/B3/blob/main/README_LEGACY.md)**
+**This is documentation for versions 0.4 and up.**
 
 ## About
 B3 is a bot thats a newer and updated version of a now deprecated bot called "BBB". It's now improved to be faster, more accurate, and easier to use then before. 
@@ -63,12 +63,12 @@ __If you already have python installed, skip this step.__
 
 ### Step 3: Running B3
 #### Now that everything is configured, It's time to actually install B3.
-#### 3.1 Go to the 4th link. At the newest release, scroll down to files and download the zip file.
+#### 3.1 Go to the 3rd link. At the newest release, scroll down to files and download the zip file.
 #### 3.2 extract it.
 #### 3.3 In the extracted folder, run setup.py
 #### 3.4 Follow the prompts.
 #### 3.5 After the inital setup, go to C:\b3 in File Explorer. run verify.py by double clicking or running from cmd. read carefully and start the check.
-#### 3.6 During the check you might see a prompt from BestBuy asking for email and or phone confirmation. B3 cannot do this itself yet. You must click and allow the sign in.
+#### 3.6 During the check you might see a prompt from BestBuy asking for email and or phone confirmation. B3 cannot do this itself. You must click and allow the sign in.
 #### 3.7 When the verification check is done, Close the window.
 #### 3.8 Go to the C:\b3 folder again.
 #### 3.9 (Optional) Right click "b3.py" and choose Send to -> Desktop (create shortcut)
