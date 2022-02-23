@@ -2,7 +2,7 @@ import os
 from os.path import exists
 import shutil
 
-print("\nB3 Installer\nV0.6")
+print("\nB3 Installer\nV0.7")
 print("\nIf you are stuck, view README.md file\n")
 
 # GitHub Copilot is a great thing
