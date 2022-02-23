@@ -19,6 +19,8 @@ curl -s https://raw.githubusercontent.com/Dogey11/B3/main/src/main.py > main.py
 curl -s https://raw.githubusercontent.com/Dogey11/B3/main/src/uninstall.py > uninstall.py
 curl -s https://raw.githubusercontent.com/Dogey11/B3/main/src/verify.py > verify.py
 
+curl -s https://raw.githubusercontent.com/Dogey11/B3/main/LICENSE > LICENSE.txt
+
 cd C:\Windows\Temp
 curl -s https://raw.githubusercontent.com/Dogey11/B3/main/Required > B3req.txt
 
