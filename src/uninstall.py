@@ -4,7 +4,7 @@ yn = input(r"Are you sure? This will delete all files in the C:\b3 directory [y\
 yn = yn.lower()
 
 if yn == "y":
-    shutil.rmtree("C:/b3")
+    shutil.rmtree("C:/B3", ignore_errors=True)
 elif yn == "n":
     input("Deletion canceled. Press Enter to close. ")
 else:

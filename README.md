@@ -5,13 +5,7 @@ Best-Buy-Bot. Written in Python
 
 **Don't use this for any scalping/reselling purposes.**
 
-**This is documentation for versions 0.4 and up.**
-
-## About
-B3 is a bot thats a newer and updated version of a now deprecated bot called "BBB". It's now improved to be faster, more accurate, and easier to use then before. 
-B3 automatically purchases an item from BestBuy when it's available using the given link.
-
-<sub><sup>Real original name right?</sup></sub>
+**This is documentation for versions 0.7 and up.**
 
 ## Currently Supported Operating Systems
 ### Windows - Supported
@@ -19,8 +13,7 @@ B3 automatically purchases an item from BestBuy when it's available using the gi
 ### Linux - Not Supported
 
 
-## Install
-Install guide
+## Installing
 
 ### Links you'll need:
 #### [Python 3](https://www.python.org/downloads/)
@@ -30,26 +23,10 @@ As of now, only Google Chrome is supported.
 #### [B3](https://github.com/Dogey11/B3/releases/latest)
 The latest version of B3.
 
-### Installation Guide:
+### Install Guide
 
-### Step 1: Installing Python
+### Step 1: Install Python
 __If you already have python installed, skip this step.__
-
-#### 1.1. Go to the 1st link and click the download button shown below:
-![Screenshot 2021-11-30 094425](https://user-images.githubusercontent.com/69096657/144100197-6a2118eb-14dd-441f-8dae-6bc0a4d30ea9.png)
-<sub><sup>My microsoft paint circle lol</sup></sub>
-
-#### 1.2. Open the installer.
-![unknown](https://user-images.githubusercontent.com/69096657/144100640-49284c03-c5a3-40ff-bb8e-fb68b0d3225e.png)
-
-<sub><sup>I'm good at making circles</sup></sub>
-#### Select the Add Python 3.10 to PATH option. Note: this may require administrator privileges.
-#### Select Install Now.
-
-#### 1.3. When the install is finished, Select disable path length limit if prompted.
-![unknown2](https://user-images.githubusercontent.com/69096657/144101345-6d57414a-089b-4351-a3ba-22aa7d2c27eb.png)
-#### Restart your pc and go to the next step.
-
 
 
 ### Step 2: Create and Configure A BestBuy Account
@@ -60,20 +37,15 @@ __If you already have python installed, skip this step.__
 #### 2.4 Make sure 2FA (Two factor authentication) is DISABLED on your account.
 
 
-
 ### Step 3: Running B3
-#### Now that everything is configured, It's time to actually install B3.
-#### 3.1 Go to the 3rd link. At the newest release, scroll down to files and download the zip file.
-#### 3.2 extract it.
-#### 3.3 In the extracted folder, run setup.py
-#### 3.4 Follow the prompts.
-#### 3.5 After the inital setup, go to C:\b3 in File Explorer. run verify.py by double clicking or running from cmd. read carefully and start the check.
-#### 3.6 During the check you might see a prompt from BestBuy asking for email and or phone confirmation. B3 cannot do this itself. You must click and allow the sign in.
-#### 3.7 When the verification check is done, Close the window.
-#### 3.8 Go to the C:\b3 folder again.
-#### 3.9 (Optional) Right click "b3.py" and choose Send to -> Desktop (create shortcut)
-#### 3.10 Double click the shortcut or .py file and enter in the item & login info when prompted.
-#### 3.11 Let it run until your item is bought!
+#### 3.1 Run B3setup.bat
+#### 3.2 Follow the prompts.
+#### 3.3 During the check you might see a prompt from BestBuy asking for email and or phone confirmation. You must click and allow the sign in.
+#### 3.4 When the verification check is done, Close the window.
+#### 3.5 Go to C:\B3 again.
+#### 3.6 (Optional) Right click "B3.py" and choose Send to -> Desktop (create shortcut)
+#### 3.7 Double click B3 and enter in the item & login info when prompted.
+#### 3.8 Let it run until your item is bought!
 
 
 
@@ -83,13 +55,11 @@ __If you already have python installed, skip this step.__
 
 Datetime
 
+time
+
 os
 
 shutil
-
-sys
-
-time
 
 
 #### Third-Party:
@@ -97,6 +67,8 @@ time
 [Selenium](https://pypi.org/project/selenium/)
 
 [webdriver-manager](https://pypi.org/project/webdriver-manager/)
+
+[pyinstaller](https://pypi.org/project/pyinstaller/)
 
 ## Installing from source
 ``` 

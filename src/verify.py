@@ -68,5 +68,4 @@ with webdriver.Chrome(ChromeDriverManager().install(), service_log_path="NUL") a
             bought = True
             os.system("cls")
             print("Test complete. You may now close.")
-            print("\nIt is recommended to remove the free item from your\ncart before continuing.\n")
-            input("Press Enter to close.")
+            print("\nIt is recommended to remove the free item from your cart before continuing.\n")
