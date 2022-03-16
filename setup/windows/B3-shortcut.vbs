@@ -7,7 +7,8 @@ Set objShell = WScript.CreateObject ("Wscript.Shell")
 If Wscript.Arguments.Item(1)="1" Then
     strLPath = objShell.SpecialFolders ("Desktop")
 ElseIf Wscript.Arguments.Item(1)="2" Then
-    strLPath = objShell.SpecialFolders ("Startup")
+    appDataLocation=objShell.ExpandEnvironmentStrings("%APPDATA%")
+    strLPath = appDataLocation & "\Microsoft\Windows\Start Menu\Programs"
 End If
 Set objShortcut = objShell.CreateShortcut (strLPath & "\" & strProgramTitle & ".lnk")
 objShortcut.TargetPath = strProgram

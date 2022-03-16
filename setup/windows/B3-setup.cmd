@@ -55,10 +55,10 @@ pip install -r B3req.txt
 
 REM Get files
 CD %B3_PATH%
-curl -s https://raw.githubusercontent.com/Dogey11/B3/main/src/B3.py > B3.py
-curl -s https://raw.githubusercontent.com/Dogey11/B3/main/src/main.py > main.py
-curl -s https://raw.githubusercontent.com/Dogey11/B3/main/src/uninstall.py > uninstall.py
-curl -s https://raw.githubusercontent.com/Dogey11/B3/main/src/verify.py > verify.py
+curl -s https://raw.githubusercontent.com/Dogey11/B3/main/src/cli/B3.py > B3.py
+curl -s https://raw.githubusercontent.com/Dogey11/B3/main/src/cli/main.py > main.py
+curl -s https://raw.githubusercontent.com/Dogey11/B3/main/src/cli/uninstall.py > uninstall.py
+curl -s https://raw.githubusercontent.com/Dogey11/B3/main/src/cli/verify.py > verify.py
 CLS
 
 REM Make executable
