@@ -5,8 +5,8 @@ B3_PRE_PATH=$PWD
 function makeDir {
     B3_PATH=$HOME/.Dogey11/B3
     [ -d "$B3_PATH" ] && rm -rf $B3_PATH
-    mkdir Dogey11
-    cd Dogey11
+    mkdir .Dogey11
+    cd .Dogey11
     mkdir B3
     cd B3
 }
