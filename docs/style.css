@@ -32,12 +32,6 @@ p {
     color: white;
 }
 
-ul > li {
-    display: table;
-    margin: 0 auto;
-    text-align: left;
-}
-
 a {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
