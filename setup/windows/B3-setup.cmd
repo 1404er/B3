@@ -50,7 +50,7 @@ IF %ERRORLEVEL% == 3 ( EXIT /B )
 
 REM Install modules
 CD %B3_TEMP%
-curl -s https://raw.githubusercontent.com/Dogey11/B3/main/B3req.txt > B3req.txt
+curl -s https://raw.githubusercontent.com/Dogey11/B3/main/setup/windows/B3-Req-win32 > B3req.txt
 pip install -r B3req.txt
 
 REM Get files
