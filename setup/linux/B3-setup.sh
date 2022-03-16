@@ -3,7 +3,7 @@
 B3_PRE_PATH=$PWD
 
 function makeDir {
-    B3_PATH=$HOME/Dogey11/B3
+    B3_PATH=$HOME/.Dogey11/B3
     [ -d "$B3_PATH" ] && rm -rf $B3_PATH
     mkdir Dogey11
     cd Dogey11
@@ -33,6 +33,8 @@ function installModules {
 }
 
 function getFiles {
+    cd $B3_PATH
+
     wget -q https://raw.githubusercontent.com/Dogey11/B3/main/src/cli/B3.py
     wget -q https://raw.githubusercontent.com/Dogey11/B3/main/src/cli/main.py
     wget -q https://raw.githubusercontent.com/Dogey11/B3/main/src/cli/uninstall.py
