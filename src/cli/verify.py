@@ -5,7 +5,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.expected_conditions import presence_of_element_located
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.firefox.service import Service
+from webdriver_manager.firefox import GeckoDriverManager
 
 print("This will start a verification test to check B3 is functioning properly.")
 print("This is required before running B3.")
@@ -21,7 +22,9 @@ password = input("BestBuy Account Password: ")
 
 bought = False
 
-with webdriver.Chrome(ChromeDriverManager().install()) as driver:
+service = Service(executable_path=GeckoDriverManager().install())
+
+with webdriver.Firefox(service=service) as driver:
     driver.get(link)
     while not bought:
         try:
