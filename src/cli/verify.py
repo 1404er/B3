@@ -10,7 +10,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 
 print("This will start a verification test to check B3 is functioning properly.")
 print("This is required before running B3.")
-print("B3 will launch Chrome and PRETEND to purchase a FREE item.")
+print("B3 will launch FireFox and PRETEND to purchase a FREE item.")
 print("Nothing will be bought and this is purely to test stability.")
 print("If test fails for any reason, please relaunch verify.py")
 input("Press Enter to continue. ")
