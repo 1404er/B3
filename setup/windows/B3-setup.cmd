@@ -1,6 +1,5 @@
 @ECHO OFF
 
-SET B3_PRE_PATH = %CD%
 
 ECHO:
 ECHO B3 Installer
@@ -77,11 +76,7 @@ IF %B3_EXE% == 1 (
     MOVE B3.py B3.dg11
     CLS
 )
-IF %B3_EXE% == 2 (
-    ECHO: 
-    ECHO Skipping... 
-    ECHO:
-)
+IF %B3_EXE% == 2 ( ECHO: )
 IF %B3_EXE% == 3 ( EXIT /B )
 
 REM Make shortcuts
@@ -89,25 +84,22 @@ REM Make shortcuts
 CD %B3_TEMP%
 curl -s https://raw.githubusercontent.com/Dogey11/B3/main/setup/windows/B3-shortcut.vbs > B3-shortcut.vbs
 
-CHOICE /c ync /n /m "Make Desktop shortcut? [Y/N]: "
+IF %B3_EXE% == 1 (
+    B3-shortcut.vbs .exe 1
+    B3-shortcut.vbs .exe 2
+) ELSE (
+    B3-shortcut.vbs .py 1
+    B3-shortcut.vbs .py 2
+)
 
-SET B3_CHOICE=%ERRORLEVEL%
+CD %B3_PATH%
 
-IF %B3_EXE% == 1 ( SET B3_TYPE = .exe )
-IF %B3_EXE% == 2 ( SET B3_TYPE = .py )
-
-IF %B3_CHOICE% == 1 ( B3-shortcut.vbs %B3_TYPE% 1 )
-
-B3-shortcut.vbs %B3_TYPE% 2
-
-ECHO:
 ECHO Install complete. Running verification test...
-TIMEOUT /T 5
+TIMEOUT 5
 CLS
 ECHO:
 
 verify.py
 
-CD %B3_PRE_PATH%
 PAUSE
 EXIT /B
