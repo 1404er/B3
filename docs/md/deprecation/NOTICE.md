@@ -1,6 +1,6 @@
 # Deprecation notice
 
-On **March 28th, 2022** the tenth and final version **1.0** was released. It is the final planned version,
+On **March 28th, 2022** the tenth version **1.0** was released. It is the final planned version,
 however PIP dependencies will still be updated, and new issues and pull requests can be made until
 B3 is archived on **April 20th, 2023**.
 
