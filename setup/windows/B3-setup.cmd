@@ -65,7 +65,6 @@ CHOICE /c ync /n /m "Make executable? (8MB needed) [Y/N]: "
 SET B3_EXE=%ERRORLEVEL%
 IF %B3_EXE% == 1 (
     pip uninstall enum34 -y
-    pip install pyinstaller==4.10
     pyinstaller --onefile main.py
     DEL main.py
     RD /S /Q __pycache__
