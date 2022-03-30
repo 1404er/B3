@@ -27,9 +27,9 @@ function license {
 
 function installModules {
     cd /var/tmp
-    wget -q https://raw.githubusercontent.com/Dogey11/B3/main/setup/linux/B3-Req-linux
+    wget -q https://raw.githubusercontent.com/Dogey11/B3/main/setup/linux/requirements.txt
 
-    pip3 install -r B3-Req-linux
+    pip3 install -r requirements.txt
 }
 
 function getFiles {
