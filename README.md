@@ -1,4 +1,7 @@
 # B3
+
+![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/dogey11/B3?style=for-the-badge)
+
 Best-Buy-Bot. Written in Python
 
 
