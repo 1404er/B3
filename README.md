@@ -1,6 +1,6 @@
 # B3
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/dogey11/b3?style=for-the-badge) ![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/dogey11/B3?style=for-the-badge)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/dogey11/b3?style=for-the-badge)
 
 Best-Buy-Bot. Written in Python
 
