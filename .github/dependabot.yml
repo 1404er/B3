@@ -1,10 +1,6 @@
 version: 2
 updates:
   - package-ecosystem: "pip"
-    directory: "/setup/windows/"
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "pip"
-    directory: "/setup/linux"
+    directory: "/"
     schedule:
       interval: "daily"
