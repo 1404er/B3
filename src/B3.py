@@ -20,7 +20,7 @@ def main(p, link, email, password, verify):
 
     page = context.new_page()
 
-    page.goto(link, timeout=10000)
+    page.goto(link, timeout=100000)
 
     while True:
         try:

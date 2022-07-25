@@ -4,4 +4,6 @@
 
 Best-Buy-Bot. Written in Python
 
+**CURRENTLY NON-FUNCTIONAL**
+
 [Getting Started](https://github.com/Dogey11/B3/blob/main/docs/GETTING_STARTED.md)
